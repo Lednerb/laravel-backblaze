@@ -22,13 +22,13 @@ Add the following to your filesystems.php config file in the ```disks``` section
 ```
 'b2' => [
     'driver'         => 'b2',
-    'accountId'      => '',
-    'applicationKey' => '',
-    'bucketName'     => '',
+    'accountId'      => env('B2_ACCOUNT_ID'),
+    'applicationKey' => env('B2_APPLICATION_KEY'),
+    'bucketName'     => env('B2_BUCKET_NAME'),
 ],
 ```
 
-Now just paste in your credentials and bucketname and you're ready to go!
+Now add your credentials and bucketname to your `.env` file and you're ready to go!
 
 ## Usage
 Just use it as you normally would use the Storage facade.
